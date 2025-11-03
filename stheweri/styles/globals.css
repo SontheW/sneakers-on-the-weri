@@ -1,21 +1,102 @@
-/* globals.css - stheweri (dark-first) */
-:root{
-  --bg:#121212;
-  --text:#ffffff;
-  --muted:#9a9a9a;
-  --accent:#d32f2f;
-  --surface:#1a1a1a;
-  --max-w:1100px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html,body{padding:0;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;background:var(--bg);color:var(--text)}
-a{color:inherit;text-decoration:none}
-.container{max-width:var(--max-w);margin:0 auto;padding:0 20px}
-.header{display:flex;align-items:center;justify-content:flex-end;padding:18px 0}
-.hero{min-height:70vh;display:flex;align-items:center;justify-content:center;text-align:center;flex-direction:column;gap:18px}
-.title{font-family:'Bebas Neue', Arial, sans-serif;font-size:88px;letter-spacing:1px}
-.subtitle{font-size:16px;color:var(--muted)}
-.btn{background:var(--accent);color:white;padding:12px 22px;border-radius:10px;font-weight:700;border:none;cursor:pointer;transition:transform .12s ease;}
-.btn:hover{transform:translateY(-3px)}
-.footer{padding:28px 0;text-align:center;color:var(--muted);border-top:1px solid rgba(255,255,255,0.04)}
-.theme-toggle{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px 10px;border-radius:8px;color:var(--text);cursor:pointer}
-:root[data-theme='light']{--bg:#ffffff;--text:#0a0a0a;--muted:#6b6b6b;--surface:#f7f7f7}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #fafafa;
+  color: #111;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+  border-bottom: 1px solid #ddd;
+}
+
+header .logo {
+  font-weight: 800;
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
+
+header nav a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem 4rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.hero p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.hero button {
+  margin-top: 2rem;
+  padding: 0.8rem 1.8rem;
+  background: #d32f2f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  background: #b71c1c;
+}
+
+.products {
+  padding: 4rem;
+  text-align: center;
+}
+
+.products h2 {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.products .grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.products .grid div p {
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.about, .contact {
+  padding: 4rem;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #ddd;
+}
