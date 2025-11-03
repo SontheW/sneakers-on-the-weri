@@ -1,0 +1,21 @@
+/* globals.css - stheweri (dark-first) */
+:root{
+  --bg:#121212;
+  --text:#ffffff;
+  --muted:#9a9a9a;
+  --accent:#d32f2f;
+  --surface:#1a1a1a;
+  --max-w:1100px;
+}
+html,body{padding:0;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;background:var(--bg);color:var(--text)}
+a{color:inherit;text-decoration:none}
+.container{max-width:var(--max-w);margin:0 auto;padding:0 20px}
+.header{display:flex;align-items:center;justify-content:flex-end;padding:18px 0}
+.hero{min-height:70vh;display:flex;align-items:center;justify-content:center;text-align:center;flex-direction:column;gap:18px}
+.title{font-family:'Bebas Neue', Arial, sans-serif;font-size:88px;letter-spacing:1px}
+.subtitle{font-size:16px;color:var(--muted)}
+.btn{background:var(--accent);color:white;padding:12px 22px;border-radius:10px;font-weight:700;border:none;cursor:pointer;transition:transform .12s ease;}
+.btn:hover{transform:translateY(-3px)}
+.footer{padding:28px 0;text-align:center;color:var(--muted);border-top:1px solid rgba(255,255,255,0.04)}
+.theme-toggle{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px 10px;border-radius:8px;color:var(--text);cursor:pointer}
+:root[data-theme='light']{--bg:#ffffff;--text:#0a0a0a;--muted:#6b6b6b;--surface:#f7f7f7}
